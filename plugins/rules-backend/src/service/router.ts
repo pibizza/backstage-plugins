@@ -20,6 +20,30 @@ export async function createRouter(
     logger.info('PONG!');
     response.json({ status: 'ok' });
   });
+
+  router.get('/health2', (_, response) => {
+    logger.info('PONG!');
+    response.json({ status: 'ok' });
+  });
+
+  router.get('/scorecards', (_, response) => {
+    logger.info('PONG!');
+    response.json({
+      results: [
+        {
+          status: 'Ok',
+          measureValue: '50',
+          measureName: 'Code coverage',
+        },
+        {
+          status: 'Warning',
+          measureValue: '90',
+          measureName: 'Security Issues',
+        },
+      ],
+    });
+  });
+
   router.use(errorHandler());
   return router;
 }

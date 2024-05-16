@@ -1,1 +1,1 @@
-export { rulesPlugin as default } from './plugin';
+export { rulesBackendPlugin as default } from './RulesBackendPlugin';
