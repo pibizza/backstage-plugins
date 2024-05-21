@@ -1,7 +1,8 @@
 import { DiscoveryApi } from '@backstage/core-plugin-api';
 
 import { ScoreCardApi } from './api';
-import { ScoreCard } from './types';
+
+import type { ScoreCard } from './types';
 
 export class ScoreCardBackendClient implements ScoreCardApi {
   private readonly discoveryApi: DiscoveryApi;

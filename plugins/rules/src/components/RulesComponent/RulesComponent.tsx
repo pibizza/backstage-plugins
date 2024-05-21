@@ -12,7 +12,6 @@ import {
 
 import { Grid, Typography } from '@material-ui/core';
 
-import { useScoreCardObjects } from '../../useRulesClient';
 import { RulesFetchComponent } from '../RulesFetchComponent';
 
 export const RulesComponent = () => {
