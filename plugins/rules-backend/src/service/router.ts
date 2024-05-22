@@ -4,7 +4,6 @@ import express from 'express';
 import Router from 'express-promise-router';
 import { Logger } from 'winston';
 
-
 export interface RouterOptions {
   logger: Logger;
 }
@@ -27,12 +26,8 @@ export async function createRouter(
     response.json({ status: 'ok' });
   });
 
-
-
   router.get('/scorecards', (_, response) => {
     logger.info('PONG!');
-
-
 
     response.json({
       results: [
@@ -61,8 +56,6 @@ export async function createRouter(
   //     logger.info(measure);
   //   }
 
-
-
   //   response.json({
   //     results: [
   //       {
@@ -79,11 +72,6 @@ export async function createRouter(
   //   });
   // });
 
-
-
   router.use(errorHandler());
   return router;
 }
-
-
-
