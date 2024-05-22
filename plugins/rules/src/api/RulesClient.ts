@@ -1,7 +1,6 @@
 import { DiscoveryApi } from '@backstage/core-plugin-api';
 
 import { ScoreCardApi } from './api';
-
 import type { ScoreCard } from './types';
 
 export class ScoreCardBackendClient implements ScoreCardApi {
