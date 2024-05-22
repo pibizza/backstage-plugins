@@ -9,5 +9,5 @@ export interface ScoreCardApi {
 }
 
 export const scoreCardApiRef = createApiRef<ScoreCardApi>({
-  id: 'plugin.rules.service',
+  id: 'plugin.rules.api',
 });
