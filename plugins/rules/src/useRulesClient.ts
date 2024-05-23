@@ -47,7 +47,7 @@ export const useScoreCards = () => {
   };
   useEffect(() => {
     getObjects();
-  });
+  }, []);
   return {
     error,
     loading,
